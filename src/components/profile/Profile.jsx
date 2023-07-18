@@ -1,34 +1,35 @@
 import css from 'components/profile/Profile.module.css';
 import PropTypes from 'prop-types';
 
-// export const Profile = ({ events }) => {
-//   console.log(events);
-//   return <div className={css.profile}>y</div>;
-// };
-
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <section class="statistics">
-      <h2 class="title">Upload stats</h2>
-      <ul class="stat-list">
-        <li class="item">
-          <span class="label">.docx</span>
-          <span class="percentage">4%</span>
+    <div className={css.profile}>
+      <div className={css.description}>
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+          alt="User avatar"
+          className={css.avatar}
+        />
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
+      </div>
+
+      <ul className={css.stats}>
+        <li>
+          <span className={css.label}>Followers</span>
+          <span className={css.quantity}>{stats.followers}</span>
         </li>
-        <li class="item">
-          <span class="label">.mp3</span>
-          <span class="percentage">14%</span>
+        <li>
+          <span className={css.label}>Views</span>
+          <span className={css.quantity}>{stats.views}</span>
         </li>
-        <li class="item">
-          <span class="label">.pdf</span>
-          <span class="percentage">41%</span>
-        </li>
-        <li class="item">
-          <span class="label">.mp4</span>
-          <span class="percentage">12%</span>
+        <li>
+          <span className={css.label}>Likes</span>
+          <span className={css.quantity}>{stats.likes}</span>
         </li>
       </ul>
-    </section>
+    </div>
   );
 };
 
