@@ -5,6 +5,7 @@
   border-collapse: collapse;
   text-align: center;
   border-spacing: 5px 5px;
+  box-shadow: 0px 4px 0px -2px #728e9a;
 }
 
 .headingItem {
