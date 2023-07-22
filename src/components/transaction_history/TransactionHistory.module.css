@@ -1,0 +1,31 @@
+.transactionHistory {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 600px;
+  border-collapse: collapse;
+  text-align: center;
+  border-spacing: 5px 5px;
+}
+
+.headingItem {
+  width: calc(100% / 3);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: azure;
+  background-color: #4395c6;
+  border-left: 1px solid #f9fcf5;
+  border-right: 1px solid #f9fcf5;
+}
+
+.transactionItem {
+  font-size: 13px;
+  text-transform: capitalize;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: 1px solid #c4d0b5;
+}
+
+.tableRow:nth-child(2n) {
+  background-color: #dfe2e5;
+}
